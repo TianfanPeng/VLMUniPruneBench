@@ -4,7 +4,7 @@
 [![Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2511.02650)
 
 
-UniPruneBench is an open-source benchmark for evaluating visual input token compression in large multimodal models (LMMs). It integrates with VLMEvalKit to enable efficient pruning evaluations on various datasets, focusing on methods like [DART](https://github.com/ZichenWen1/DART), [PyramidDrop](https://github.com/Cooperx521/PyramidDrop), [FastV](https://github.com/pkunlp-icler/FastV), [FitPrune](https://github.com/ywh187/FitPrune), [VTW](https://github.com/lzhxmu/VTW), [G-Prune](https://github.com/jytmelon/G-Prune/), [LLaVA-PruMerge](https://github.com/42Shawn/LLaVA-PruMerge), [divprune](https://github.com/vbdi/divprune), [MustDrop](https://github.com/liuting20/MustDrop), [VisPruner](https://github.com/Theia-4869/VisPruner) and so on.
+UniPruneBench is an open-source benchmark for evaluating visual input token compression in large multimodal models (LMMs). It integrates with VLMEvalKit to enable efficient pruning evaluations on various datasets, focusing on methods like [DART](https://github.com/ZichenWen1/DART), [PyramidDrop](https://github.com/Cooperx521/PyramidDrop), [FastV](https://github.com/pkunlp-icler/FastV), [VTW](https://github.com/lzhxmu/VTW), [G-Prune](https://github.com/jytmelon/G-Prune/), [LLaVA-PruMerge](https://github.com/42Shawn/LLaVA-PruMerge), [divprune](https://github.com/vbdi/divprune), [MustDrop](https://github.com/liuting20/MustDrop), [VisPruner](https://github.com/Theia-4869/VisPruner) and so on.
 
 ## Table of Contents
 
@@ -212,7 +212,6 @@ We sincerely appreciate the following github repos for their valuable codebase w
 - https://github.com/pkunlp-icler/FastV
 - https://github.com/ZichenWen1/DART
 - https://github.com/Cooperx521/PyramidDrop
-- https://github.com/ywh187/FitPrune
 - https://github.com/lzhxmu/VTW
 - https://github.com/jytmelon/G-Prune/
 - https://github.com/42Shawn/LLaVA-PruMerge
