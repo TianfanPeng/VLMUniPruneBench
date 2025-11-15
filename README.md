@@ -72,7 +72,7 @@ python run_qwenvl2_5.py \
 #### InternVL-3 Example
 ```bash
 export KEEP_RATIO=0.111
-export PRUNE_METHOD_INTRA_LLM=fitprune_intra_llm
+export PRUNE_METHOD_INTRA_LLM=random_intra_llm
 
 python run_internvl3.py \
     --model InternVL3-8B \
