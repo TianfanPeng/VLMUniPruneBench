@@ -31,7 +31,7 @@ UniPruneBench is an open-source benchmark for evaluating visual input token comp
 
 
 ## 🆕 News
-- **[2025-10-14]** Released codebase for UniPruneBench, supporting Qwen2.5-VL and InternVL models with multiple pruning strategies.
+- **[2025-10-14]** Released codebase for UniPruneBench, supporting Qwen2.5-VL and InternVL3 models with multiple pruning strategies.
 
 ## 🏗️ QuickStart
 
@@ -49,7 +49,9 @@ pip install transformers==4.54.0
 pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124
 pip install flash-attn==2.7.3
 pip install timm==1.0.19
+pip install scikit-learn datasets opencv-python-headless
 
+git clone https://github.com/open-compass/VLMEvalKit
 cd VLMEvalKit && pip install -e .
 ```
 
