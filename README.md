@@ -56,10 +56,14 @@ cd VLMEvalKit && pip install -e .
 ## 📊 Accuracy Evaluation
 Evaluate on a benchmark like MME with 88.9% pruning (keeping 11.1% of tokens).
 
+> **New:** Use `INTRA_LLM_LAYER_SPECS="layer:method[:ratio],..."` to describe per-layer intra-LLM pruning.  
+> Example: `INTRA_LLM_LAYER_SPECS="2:fitprune_intra_llm:0.5;6:pdrop_intra_llm:0.3;12:pdrop_intra_llm:0.2"`
+
 #### Qwen2.5-VL Example
 ```bash
 export KEEP_RATIO=0.111       
 export PRUNE_METHOD_PRE_LLM=divprune_pre_llm
+export INTRA_LLM_LAYER_SPECS="2:fastv_intra_llm:0.5"
 
 python run_qwenvl2_5.py \
     --model Qwen2.5-VL-7B-Instruct \
@@ -70,7 +74,7 @@ python run_qwenvl2_5.py \
 #### InternVL-3 Example
 ```bash
 export KEEP_RATIO=0.111
-export PRUNE_METHOD_INTRA_LLM=fitprune_intra_llm
+export INTRA_LLM_LAYER_SPECS="2:fitprune_intra_llm:0.5;6:pdrop_intra_llm:0.3;12:pdrop_intra_llm:0.2"
 
 python run_internvl3.py \
     --model InternVL3-8B \
