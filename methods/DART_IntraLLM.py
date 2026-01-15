@@ -1,7 +1,7 @@
 import os
 import torch
 from .prune_registry import register_prune
-
+### Test
 @register_prune('dart_intra_llm')
 def dart_prune_intra_llm(visual_features):
     key_states = torch.load(os.environ.get('KEY_STATES_PATH')).cuda()
